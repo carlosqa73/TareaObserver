@@ -23,8 +23,16 @@ public class VentanaPrincipal {
 		root.setSpacing(50);
 		root.setAlignment(Pos.CENTER);
 		root.setPadding(new Insets(100,100,100,100));
+		ejercutarEvento();
 		
 	}
+	public void ejercutarEvento() {
+		boton1.setOnMouseClicked(e -> root.setStyle("-fx-background-color:blue"));
+		boton2.setOnMouseClicked(e -> root.setStyle("-fx-background-color:yellow"));
+		boton3.setOnMouseClicked(e -> root.setStyle("-fx-background-color:red"));
+		
+	}
+	
 	
 	public HBox getRoot() {
 		return root;
