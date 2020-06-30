@@ -1,5 +1,6 @@
 package Aplicacion;
 
+import Interfaces.Notifier;
 import Interfaces.VentanaPrincipal;
 import javafx.application.Application;
 import javafx.scene.Scene;
@@ -15,6 +16,9 @@ public class Main extends Application{
 	public void start(Stage primaryStage) throws Exception {
 		
 		VentanaPrincipal vp = new VentanaPrincipal();
+		
+		Notifier o = new Notifier();
+		vp.addObserver(o);
 		
 		Scene scene = new Scene(vp.getRoot());
 		primaryStage.setTitle("PROGRAMA");
