@@ -1,11 +1,13 @@
 package Interfaces;
 
+import java.util.Observable;
+
 import javafx.geometry.Insets;
 import javafx.geometry.Pos;
 import javafx.scene.control.Button;
 import javafx.scene.layout.HBox;
 
-public class VentanaPrincipal {
+public class VentanaPrincipal extends Observable{
 	
 	private HBox root;
 	private Button boton1;
@@ -29,15 +31,21 @@ public class VentanaPrincipal {
 	public void ejercutarEvento() {
 		boton1.setOnMouseClicked(e -> {
 		root.setStyle("-fx-background-color:blue");
-		System.out.println("Azul");
+		setChanged();
+		notifyObservers("Blue");
+		
 		});
+		
 		boton2.setOnMouseClicked(e ->{	
-		root.setStyle("-fx-background-color:yellow");
-		System.out.println("Amarillo");
+		root.setStyle("-fx-background-color:yellow");	
+		setChanged();
+		notifyObservers("Yellow");
 		});
+		
 		boton3.setOnMouseClicked(e ->{
 		root.setStyle("-fx-background-color:red");
-		System.out.println("Rojo");
+		setChanged();
+		notifyObservers("Red");
 		});
 		
 	}
