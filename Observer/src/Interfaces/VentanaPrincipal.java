@@ -27,9 +27,18 @@ public class VentanaPrincipal {
 		
 	}
 	public void ejercutarEvento() {
-		boton1.setOnMouseClicked(e -> root.setStyle("-fx-background-color:blue"));
-		boton2.setOnMouseClicked(e -> root.setStyle("-fx-background-color:yellow"));
-		boton3.setOnMouseClicked(e -> root.setStyle("-fx-background-color:red"));
+		boton1.setOnMouseClicked(e -> {
+		root.setStyle("-fx-background-color:blue");
+		System.out.println("Azul");
+		});
+		boton2.setOnMouseClicked(e ->{	
+		root.setStyle("-fx-background-color:yellow");
+		System.out.println("Amarillo");
+		});
+		boton3.setOnMouseClicked(e ->{
+		root.setStyle("-fx-background-color:red");
+		System.out.println("Rojo");
+		});
 		
 	}
 	
