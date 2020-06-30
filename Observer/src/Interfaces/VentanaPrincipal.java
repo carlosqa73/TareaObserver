@@ -67,11 +67,19 @@ public class VentanaPrincipal extends Observable{
 		notifyObservers("Red");
 		});
 		
+		boton4.setOnMouseClicked(e ->{
+			mostrarInfo(tf);
+		});
+		
 	}
 	
 	
 	public VBox getRoot() {
 		return root;
+	}
+	public void mostrarInfo(TextField t) {
+		System.out.println(t.getText());
+		
 	}
 	
 }
