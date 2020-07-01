@@ -1,1 +1,3 @@
 # Patron Observer
+El presente proyecto consiste en la creación de un programa que permite cambiar el color de fondo de una ventana por medio de botones que contienen el color que se desea, al hacer clic sobre cada botón se muestra en consola el nuevo color de fondo de la ventana, asimismo, se asignó una nueva funcionalidad para poder ejemplificar AOP, y consiste basicamente en un Textfield que recibe algun texto, y al pulsar el boton imprimir muestra por consola el texto que ingresó el usuario, el hecho de separar los requerimientos ayuda mucho, sobre todo a eliminar los problemas causados por "Code tangling" y "Code scattering" de igual forma me permite tener una mayor reusabilidad de código.
+
